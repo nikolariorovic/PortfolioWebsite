@@ -1,0 +1,35 @@
+{
+  "name": "vite-vue-typescript-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^2.0.18",
+    "@iconify/vue": "^4.1.1",
+    "@vueuse/core": "^10.5.0",
+    "@vueuse/motion": "^2.0.0",
+    "gsap": "^3.12.2",
+    "pinia": "^2.1.7",
+    "three": "^0.157.0",
+    "vue": "^3.3.4",
+    "vue-i18n": "^9.14.2",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "@types/three": "^0.170.0",
+    "@types/vue-i18n": "^7.0.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^2.1.10"
+  }
+}

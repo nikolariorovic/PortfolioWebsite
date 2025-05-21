@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg rounded-xl border border-white/10;
+  }
+
+  .section-title {
+    @apply text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-primary rounded-full font-medium;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.5s ease;
+}
+
+.slide-enter-from {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.slide-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.left-4 {
+  left: 1.6rem;
+}
+
+.icon-skill {
+  width: 1.25em;
+  height: 1.25em;
+  margin-top: -0.3em;
+  min-width: 1.25em;
+  min-height: 1.25em;
+  max-width: 1.25em;
+  max-height: 1.25em;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
