@@ -1,15 +1,6 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 
-const form = ref({
-  name: '',
-  email: '',
-  message: ''
-})
 
-const handleSubmit = () => {
-  console.log('Form submitted:', form.value)
-}
 </script>
 
 <template>

@@ -11,12 +11,10 @@ import Drawer from './components/ui/Drawer.vue'
 import Footer from './components/Footer.vue'
 import AnimatedShapes from './components/AnimatedShapes.vue'
 import { useExperienceStore } from './stores/experience'
-import { useI18n } from 'vue-i18n/dist/vue-i18n.esm-bundler.js'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const drawerStore = useDrawerStore()
 const experienceStore = useExperienceStore()
-const { locale } = useI18n()
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -49,9 +47,7 @@ const scrollToSection = (id: string) => {
   updateActiveSection(id)
 }
 
-const toggleLanguage = () => {
-  locale.value = locale.value === 'en' ? 'sr' : 'en'
-}
+
 
 const isMobileMenuOpen = ref(false)
 

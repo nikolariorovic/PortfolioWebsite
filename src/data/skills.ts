@@ -15,7 +15,6 @@ interface SkillCategories {
   frameworks: SkillCategory
   state: SkillCategory
   tools: SkillCategory
-  design: SkillCategory
   ai: SkillCategory
 }
 

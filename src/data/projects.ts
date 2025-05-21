@@ -12,7 +12,7 @@ export function useProjects() {
 
   const projectCategories = computed<ProjectCategory[]>(() => [
     {
-      title: locale.value === 'en' ? 'Personal Projects' : 'Lični Projekti',
+      title: 'Personal Projects',
       projects: [
         {
           title: 'Moj rođendan',
@@ -43,7 +43,6 @@ export function useProjects() {
             'Team collaboration tools'
           ],
           liveUrl: 'https://verbumscript.app',
-          githubUrl: ''
         }
       ]
     },
@@ -72,7 +71,8 @@ export function useProjects() {
             'Face detection and recognition from uploaded images',
             'Creation of a labeled facial image database',
             'Association of faces with full names'
-          ]
+          ],
+          liveUrl: ''
         },{
           title: 'FK Partizan',
           description: 'Development of the complete backend logic for the official FK Partizan website, with a strong focus on API support for dynamic display of matches, live statistics, teams, players, and news. The backend was built as the foundation for the Vue frontend application, with emphasis on performance, flexibility, and easy content management through a custom CMS.',
