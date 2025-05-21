@@ -49,9 +49,9 @@ const scrollToSection = (id: string) => {
   updateActiveSection(id)
 }
 
-// const toggleLanguage = () => {
-//   locale.value = locale.value === 'en' ? 'sr' : 'en'
-// }
+const toggleLanguage = () => {
+  locale.value = locale.value === 'en' ? 'sr' : 'en'
+}
 
 const isMobileMenuOpen = ref(false)
 
