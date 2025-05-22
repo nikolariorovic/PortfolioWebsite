@@ -30,7 +30,7 @@ const skills = useSkills()
             </h3>
           </div>
 
-          <div class="grid grid-cols-2 gap-2">
+          <div class="grid gap-2" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
             <div v-for="tech in category.technologies" :key="tech.name" class="group relative p-2 rounded-lg bg-white/5 hover:bg-white/10 
                         transition-all duration-300 flex items-center gap-2">
               <div v-html="tech.icon" class="w-5 h-5 text-primary flex-shrink-0"></div>
@@ -59,6 +59,10 @@ const skills = useSkills()
 }
 
 .glass-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.13);
+  border: 1.5px solid rgba(255,255,255,0.45);
+  box-shadow:  0 6px 40px 0 rgba(0,0,0,0.18);
   animation: fade-in linear both;
   animation-timeline: --skill-cards;
   animation-range: entry 20% cover 30%;

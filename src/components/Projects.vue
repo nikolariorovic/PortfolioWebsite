@@ -97,7 +97,10 @@ const allProjects = computed(() => {
 
 <style scoped>
 .glass-card {
-  animation: fade-in 0.5s ease-out;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.13);
+  border: 1.5px solid rgba(255,255,255,0.45);
+  box-shadow:  0 6px 40px 0 rgba(0,0,0,0.18);
 }
 
 @keyframes fade-in {

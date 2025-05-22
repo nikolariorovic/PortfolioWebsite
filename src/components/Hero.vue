@@ -39,7 +39,7 @@ onMounted(() => {
             {{ $t('hero.subtitle') }}
           </p>
           <div class="flex gap-4 justify-center">
-            <a href="#projects" class="btn-primary hover:scale-105 transform transition-all duration-300">
+            <a href="#projects" class="text-white btn-primary hover:scale-105 transform transition-all duration-300">
               {{ $t('hero.viewProjects') }}
             </a>
           </div>

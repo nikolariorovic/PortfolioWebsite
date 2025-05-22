@@ -293,7 +293,7 @@ onUnmounted(() => {
 
     <!-- Back to Top Button -->
     <button @click="scrollToTop" v-show="showBackToTop"
-      class="fixed bottom-14 right-4 z-40 p-3 glass-card rounded-full hover:bg-white/10 transition-all duration-300 group">
+      class="[color:#504E4E] fixed bottom-14 right-4 z-40 p-3 glass-card rounded-full hover:bg-white/10 transition-all duration-300 group">
       <svg xmlns="http://www.w3.org/2000/svg"
         class="h-6 w-6 transform group-hover:-translate-y-1 transition-transform duration-300" fill="none"
         viewBox="0 0 24 24" stroke="currentColor">
@@ -323,8 +323,9 @@ onUnmounted(() => {
 
 .glass-card {
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.13);
+  border: 1.5px solid rgba(255,255,255,0.45);
+  box-shadow: 0 6px 40px 0 rgba(0,0,0,0.18);
 }
 
 .vertical-text {

@@ -246,4 +246,11 @@ const openExperienceDetails = (experience: Experience) => {
     @apply w-16;
   }
 }
+
+.glass-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.13);
+  border: 1.5px solid rgba(255,255,255,0.45);
+  box-shadow:  0 6px 40px 0 rgba(0,0,0,0.18);
+}
 </style>
