@@ -114,7 +114,7 @@ onUnmounted(() => {
         <button v-for="section in ['home', 'about', 'projects', 'contact']" :key="section"
           @click="scrollToSection(section)" :class="[
             'text-sm uppercase tracking-wider transition-all duration-300',
-            activeSection === section ? 'text-primary scale-110' : 'text-white/70 hover:text-white'
+            activeSection === section ? 'text-primary scale-110' : '[color:#504E4E] hover:text-primary'
           ]">
           {{ $t(`nav.${section}`) }}
         </button>

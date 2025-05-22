@@ -34,7 +34,7 @@ const socialLinks = [
            :key="link.name"
            :href="link.url"
            target="_blank"
-           class="text-white/50 hover:text-primary transform hover:scale-110 transition-all duration-300"
+           class="[color:#504E4E] hover:text-primary transform hover:scale-110 transition-all duration-300"
            :title="link.name">
           <component 
             :is="typeof link.icon === 'string' ? 'span' : link.icon"

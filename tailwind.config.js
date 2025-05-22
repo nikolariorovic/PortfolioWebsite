@@ -9,7 +9,7 @@ export default {
       colors: {
         primary: '#68AD95',
         secondary: '#86cfb5',
-        dark: '#0f172a',
+        dark: '#ffffff',
       },
       animation: {
         'blob': 'blob 7s infinite',

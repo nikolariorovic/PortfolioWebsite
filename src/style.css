@@ -9,10 +9,12 @@ body {
   width: 100%;
 }
 
-/* 
-  width: max-content;
-*/
-
+div {
+  color: #504E4E;
+}
+a {
+  color: #504E4E;
+}
 @layer base {
   html {
     scroll-behavior: smooth;
