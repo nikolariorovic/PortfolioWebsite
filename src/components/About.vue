@@ -30,11 +30,11 @@ const skills = useSkills()
             </h3>
           </div>
 
-          <div class="grid grid-cols-3 gap-2">
+          <div class="grid grid-cols-2 gap-2">
             <div v-for="tech in category.technologies" :key="tech.name" class="group relative p-2 rounded-lg bg-white/5 hover:bg-white/10 
                         transition-all duration-300 flex items-center gap-2">
-              <div v-html="tech.icon" class="w-5 h-5 text-primary"></div>
-              <div>
+              <div v-html="tech.icon" class="w-5 h-5 text-primary flex-shrink-0"></div>
+              <div class="min-w-0 flex-1">
                 <h4 class="text-sm font-medium">{{ tech.name }}</h4>
               </div>
 

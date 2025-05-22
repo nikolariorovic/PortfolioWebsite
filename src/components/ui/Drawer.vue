@@ -41,13 +41,13 @@ watch(() => props.isOpen, (newValue) => {
   <Transition name="drawer">
     <div v-if="isOpen" class="fixed inset-0 z-50">
       <!-- Backdrop -->
-      <div class="absolute inset-0 transition-all duration-500"
-        :class="isOpen ? 'bg-black/40 shadow-overlay' : 'bg-transparent'" @click="onClose">
+      <div class="absolute inset-0 bg-black/40 shadow-overlay" @click="onClose">
       </div>
 
       <!-- Drawer -->
       <div class="absolute top-0 right-0 h-full w-full max-w-2xl">
-        <div class="h-full w-full bg-dark border-l border-white/10 transition-transform duration-500">
+        <div class="h-full w-full bg-dark border-l border-white/10 transition-transform duration-500"
+          :class="isOpen ? 'translate-x-0' : 'translate-x-full'">
           <div class="relative h-full">
             <!-- Close button -->
             <button @click="onClose"
@@ -207,6 +207,10 @@ watch(() => props.isOpen, (newValue) => {
 .drawer-enter-from,
 .drawer-leave-to {
   opacity: 0;
+}
+
+.drawer-enter-from .translate-x-0,
+.drawer-leave-to .translate-x-0 {
   transform: translateX(100%);
 }
 </style>
