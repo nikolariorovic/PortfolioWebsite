@@ -103,7 +103,7 @@ onUnmounted(() => {
 
     <!-- Mobile Menu Button -->
     <button @click="toggleMobileMenu"
-      class="fixed top-4 right-4 z-50 p-2 md:hidden glass-card rounded-full hover:bg-white/10 transition-all duration-300">
+      class="[color:#504E4E] fixed top-4 right-4 z-50 p-2 md:hidden glass-card rounded-full hover:bg-white/10 transition-all duration-300">
       <Bars3Icon v-if="!isMobileMenuOpen" class="w-6 h-6" />
       <XMarkIcon v-else class="w-6 h-6" />
     </button>
@@ -130,7 +130,7 @@ onUnmounted(() => {
             <button v-for="section in ['home', 'about', 'projects', 'contact']" :key="section"
               @click="() => { scrollToSection(section); closeMobileMenu(); }" :class="[
                 'text-2xl font-medium tracking-wider transition-all duration-300',
-                activeSection === section ? 'text-primary scale-110' : 'text-white/70 hover:text-white'
+                activeSection === section ? 'text-primary scale-110' : '[color:#504E4E] hover:text-primary'
               ]">
               {{ $t(`nav.${section}`) }}
             </button>
@@ -175,7 +175,7 @@ onUnmounted(() => {
               <h3 class="text-xl font-semibold mb-3">Technologies Used</h3>
               <div class="flex flex-wrap gap-2">
                 <span v-for="tag in drawerStore.selectedProject.tags" :key="tag"
-                  class="px-4 py-2 text-sm bg-white/10 rounded-full">
+                  class="bg-[#f5f5f5] px-4 py-2 text-sm bg-white/10 rounded-full">
                   {{ tag }}
                 </span>
               </div>

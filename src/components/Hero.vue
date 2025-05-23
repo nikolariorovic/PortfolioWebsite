@@ -27,7 +27,7 @@ onMounted(() => {
     <HeroBackground />
 
     <div ref="heroContent" class="hero-content relative z-10 w-full max-w-[1400px] mx-auto px-4 lg:px-8">
-      <div class="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12 lg:gap-16 xl:gap-24 px-2 sm:px-4 lg:ml-8 xl:ml-16">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-16 lg:gap-24 xl:gap-32 px-2 sm:px-4 lg:ml-8 xl:ml-16">
         <!-- Text Content -->
         <div class="text-center lg:w-1/2">
           <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 whitespace-nowrap">
@@ -49,7 +49,7 @@ onMounted(() => {
         <div class="hidden lg:block lg:w-1/2 -mt-24">
           <div class="relative">
             <div class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[90%] h-16 bg-black/70 blur-[48px] rounded-full z-0"></div>
-            <img src="/hero-image.png" alt="Hero Image" class="w-full h-auto max-w-lg mx-auto relative z-10" />
+            <img src="/hero-image.png" alt="Hero Image" class="w-full h-auto min-w-[350px] max-w-[420px] md:max-w-[500px] lg:max-w-xl mx-auto relative z-10" />
           </div>
         </div>
       </div>

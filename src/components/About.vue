@@ -6,7 +6,7 @@ const skills = useSkills()
 </script>
 
 <template>
-  <div class="max-w-4xl mx-auto space-y-16">
+  <div class="max-w-4xl mx-auto space-y-16 xl:mt-32">
     <!-- About Section -->
     <!-- <div>
       <h2 class="section-title text-center mb-8">{{ $t('about.title') }}</h2>
@@ -31,7 +31,7 @@ const skills = useSkills()
           </div>
 
           <div class="grid gap-2" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
-            <div v-for="tech in category.technologies" :key="tech.name" class="group relative p-2 rounded-lg bg-white/5 hover:bg-white/10 
+            <div v-for="tech in category.technologies" :key="tech.name" class="bg-[#f5f5f5] group relative p-2 rounded-lg hover:bg-white/10 
                         transition-all duration-300 flex items-center gap-2">
               <div v-html="tech.icon" class="w-5 h-5 text-primary flex-shrink-0"></div>
               <div class="min-w-0 flex-1">

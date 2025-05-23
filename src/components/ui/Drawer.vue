@@ -51,8 +51,8 @@ watch(() => props.isOpen, (newValue) => {
           <div class="relative h-full">
             <!-- Close button -->
             <button @click="onClose"
-              class="absolute top-4 right-4 p-2 rounded-full hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
-              <XMarkIcon class="w-6 h-6 text-white" />
+              class="bg-[#f5f5f5] absolute top-4 right-4 p-2 rounded-full hover:bg-white/10 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
+              <XMarkIcon class="[color:#504E4E] w-6 h-6 text-white" />
             </button>
 
             <!-- Content -->
@@ -64,7 +64,7 @@ watch(() => props.isOpen, (newValue) => {
 
                 <div>
                   <h2 class="text-3xl font-bold mb-4">{{ drawerStore.selectedProject.title }}</h2>
-                  <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                  <p class="[color:#504E4E] text-gray-300 text-lg leading-relaxed mb-6">
                     {{ drawerStore.selectedProject.description }}
                   </p>
 
@@ -73,7 +73,7 @@ watch(() => props.isOpen, (newValue) => {
                       <h3 class="text-xl font-semibold mb-3">{{ $t('drawer.technologies') }}</h3>
                       <div class="flex flex-wrap gap-2">
                         <span v-for="tag in drawerStore.selectedProject.tags" :key="tag"
-                          class="px-4 py-2 text-sm bg-white/10 rounded-full">
+                          class="bg-[#f5f5f5] px-4 py-2 text-sm rounded-full">
                           {{ tag }}
                         </span>
                       </div>
@@ -82,7 +82,7 @@ watch(() => props.isOpen, (newValue) => {
                     <div>
                       <h3 class="text-xl font-semibold mb-3">{{ $t('drawer.features') }}</h3>
                       <ul class="list-disc list-inside space-y-2 text-gray-300">
-                        <li v-for="feature in drawerStore.selectedProject.features" :key="feature">
+                        <li v-for="feature in drawerStore.selectedProject.features" :key="feature" class="[color:#504E4E]">
                           {{ feature }}
                         </li>
                       </ul>
@@ -90,7 +90,7 @@ watch(() => props.isOpen, (newValue) => {
 
                     <div class="flex gap-4">
                       <a v-if="drawerStore.selectedProject.liveUrl" :href="drawerStore.selectedProject.liveUrl"
-                        target="_blank" class="btn-primary">
+                        target="_blank" class="[color:#ffffff] btn-primary">
                         View Live
                       </a>
                       <template v-if="drawerStore.selectedProject.githubUrl">
@@ -101,11 +101,11 @@ watch(() => props.isOpen, (newValue) => {
                       </template>
                       <template v-else-if="drawerStore.selectedProject.playStoreUrl">
                         <a :href="drawerStore.selectedProject.playStoreUrl" target="_blank"
-                          class="btn-primary bg-white/10 hover:bg-white/20">
+                          class="btn-primary bg-[#f5f5f5] hover:bg-primary hover:text-white duration-300">
                           Play Store
                         </a>
                         <a :href="drawerStore.selectedProject.appStoreUrl" target="_blank"
-                          class="btn-primary bg-white/10 hover:bg-white/20">
+                          class="btn-primary bg-[#f5f5f5] hover:bg-primary hover:text-white duration-300">
                           App Store
                         </a>
                       </template>
@@ -132,7 +132,7 @@ watch(() => props.isOpen, (newValue) => {
                   <div>
                     <h3 class="text-xl font-semibold mb-3">{{ $t('drawer.overview') }}</h3>
                     <div class="space-y-2 text-gray-300">
-                      <p v-for="desc in experienceStore.selectedExperience.detailedDescription" :key="desc">
+                      <p v-for="desc in experienceStore.selectedExperience.detailedDescription" :key="desc" class="[color:#504E4E]">
                         {{ desc }}
                       </p>
                     </div>
@@ -141,7 +141,7 @@ watch(() => props.isOpen, (newValue) => {
                   <div>
                     <h3 class="text-xl font-semibold mb-3">{{ $t('drawer.achievements') }}</h3>
                     <ul class="list-disc list-inside space-y-2 text-gray-300">
-                      <li v-for="achievement in experienceStore.selectedExperience.achievements" :key="achievement">
+                      <li v-for="achievement in experienceStore.selectedExperience.achievements" :key="achievement" class="[color:#504E4E]">
                         {{ achievement }}
                       </li>
                     </ul>
@@ -151,7 +151,7 @@ watch(() => props.isOpen, (newValue) => {
                     <h3 class="text-xl font-semibold mb-3">{{ $t('drawer.responsibilities') }}</h3>
                     <ul class="list-disc list-inside space-y-2 text-gray-300">
                       <li v-for="responsibility in experienceStore.selectedExperience.responsibilities"
-                        :key="responsibility">
+                        :key="responsibility" class="[color:#504E4E]">
                         {{ responsibility }}
                       </li>
                     </ul>
@@ -161,7 +161,7 @@ watch(() => props.isOpen, (newValue) => {
                     <h3 class="text-xl font-semibold mb-3">{{ $t('drawer.technologies') }}</h3>
                     <div class="flex flex-wrap gap-2">
                       <span v-for="tech in experienceStore.selectedExperience.technologies" :key="tech"
-                        class="px-4 py-2 text-sm bg-white/10 rounded-full">
+                        class="bg-[#f5f5f5] px-4 py-2 text-sm rounded-full">
                         {{ tech }}
                       </span>
                     </div>

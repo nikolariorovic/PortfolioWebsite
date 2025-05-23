@@ -35,7 +35,7 @@ const allProjects = computed(() => {
           class="px-6 py-2 rounded-full transition-all duration-300 whitespace-nowrap" :class="[
             activeCategory === 'All'
               ? 'bg-primary text-white'
-              : 'bg-white/10 hover:bg-white/20'
+              : 'bg-[#f5f5f5] hover:bg-white/20'
           ]">
           All Projects
         </button>
@@ -43,7 +43,7 @@ const allProjects = computed(() => {
           class="px-6 py-2 rounded-full transition-all duration-300 whitespace-nowrap" :class="[
             activeCategory === category.title
               ? 'bg-primary text-white'
-              : 'bg-white/10 hover:bg-white/20'
+              : 'bg-[#f5f5f5] hover:bg-primary'
           ]">
           {{ category.title }}
         </button>
@@ -63,7 +63,7 @@ const allProjects = computed(() => {
           <h4 class="text-xl font-semibold mb-2">{{ project.title }}</h4>
           <p class="text-gray-400 mb-4 line-clamp-3">{{ project.description }}</p>
           <div class="flex flex-wrap gap-2">
-            <span v-for="tag in project.tags" :key="tag" class="px-3 py-1 text-sm bg-white/10 rounded-full">
+            <span v-for="tag in project.tags" :key="tag" class="bg-[#f5f5f5] px-3 py-1 text-sm rounded-full">
               {{ tag }}
             </span>
           </div>
@@ -85,7 +85,7 @@ const allProjects = computed(() => {
           <h4 class="text-xl font-semibold mb-2">{{ project.title }}</h4>
           <p class="text-gray-400 mb-4 line-clamp-3">{{ project.description }}</p>
           <div class="flex flex-wrap gap-2">
-            <span v-for="tag in project.tags" :key="tag" class="px-3 py-1 text-sm bg-white/10 rounded-full">
+            <span v-for="tag in project.tags" :key="tag" class="bg-[#f5f5f5] px-3 py-1 text-sm rounded-full">
               {{ tag }}
             </span>
           </div>
