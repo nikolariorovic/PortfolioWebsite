@@ -19,7 +19,7 @@ const experienceStore = useExperienceStore()
 gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
-  const sections = document.querySelectorAll('section')
+  const sections = document.querySelectorAll('section:not(#contact)')
   sections.forEach(section => {
     gsap.from(section, {
       opacity: 0,
@@ -46,8 +46,6 @@ const scrollToSection = (id: string) => {
   element?.scrollIntoView({ behavior: 'smooth' })
   updateActiveSection(id)
 }
-
-
 
 const isMobileMenuOpen = ref(false)
 
@@ -126,6 +124,11 @@ onUnmounted(() => {
       <Transition name="mobile-menu">
         <nav v-if="isMobileMenuOpen"
           class="fixed inset-0 z-30 bg-dark/95 backdrop-blur-lg flex items-center justify-center">
+          <!-- Close button -->
+          <button @click="closeMobileMenu"
+            class="bg-[#f5f5f5] absolute top-4 right-4 p-2 rounded-full hover:bg-white/10 transition-all duration-300">
+            <XMarkIcon class="[color:#504E4E] w-6 h-6 text-white" />
+          </button>
           <div class="flex flex-col items-center gap-8">
             <button v-for="section in ['home', 'about', 'projects', 'contact']" :key="section"
               @click="() => { scrollToSection(section); closeMobileMenu(); }" :class="[
@@ -153,7 +156,7 @@ onUnmounted(() => {
         <Projects />
       </section>
 
-      <section id="contact" class="">
+      <section id="contact" class="opacity-100 !transform-none">
         <Contact />
       </section>
     </main>

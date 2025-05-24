@@ -178,7 +178,7 @@ const openExperienceDetails = (experience: Experience) => {
                 <p class="text-gray-400 mt-1">{{ exp.company }}</p>
                 <!-- <p class="text-gray-300 mt-3">{{ exp.description }}</p> -->
                 <div class="flex flex-wrap gap-2 mt-4">
-                  <span v-for="tech in exp.technologies" :key="tech" class="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  <span v-for="tech in exp.technologies" :key="tech" class="bg-[#f5f5f5] px-3 py-1 text-sm  rounded-full">
                     {{ tech }}
                   </span>
                 </div>

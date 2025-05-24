@@ -22,7 +22,7 @@ const skills = useSkills()
       <h2 class="section-title text-center mb-8">{{ $t('about.skills.title') }}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
         <div v-for="(category, key) in skills" :key="key"
-          class="glass-card p-4 hover:bg-white/10 transition-all duration-300">
+          class="glass-card-title p-4 hover:bg-white/10 transition-all duration-300">
           <div class="flex items-center gap-3 mb-4">
             <span class="text-xl">{{ category.icon }}</span>
             <h3 class="text-lg font-bold bg-primary bg-clip-text text-transparent">
@@ -59,6 +59,16 @@ const skills = useSkills()
 }
 
 .glass-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.13);
+  border: 1.5px solid rgba(255,255,255,0.45);
+  box-shadow:  0 6px 40px 0 rgba(0,0,0,0.18);
+  animation: fade-in linear both;
+  animation-timeline: --skill-cards;
+  animation-range: entry 20% cover 30%;
+}
+
+.glass-card-title {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.13);
   border: 1.5px solid rgba(255,255,255,0.45);

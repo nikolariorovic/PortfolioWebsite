@@ -35,7 +35,7 @@ const allProjects = computed(() => {
           class="px-6 py-2 rounded-full transition-all duration-300 whitespace-nowrap" :class="[
             activeCategory === 'All'
               ? 'bg-primary text-white'
-              : 'bg-[#f5f5f5] hover:bg-white/20'
+              : 'bg-[#f5f5f5] hover:bg-primary hover:text-white duration-300'
           ]">
           All Projects
         </button>
@@ -43,7 +43,7 @@ const allProjects = computed(() => {
           class="px-6 py-2 rounded-full transition-all duration-300 whitespace-nowrap" :class="[
             activeCategory === category.title
               ? 'bg-primary text-white'
-              : 'bg-[#f5f5f5] hover:bg-primary'
+              : 'bg-[#f5f5f5] hover:bg-primary hover:text-white duration-300'
           ]">
           {{ category.title }}
         </button>
