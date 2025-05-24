@@ -216,7 +216,7 @@ const openExperienceDetails = (experience: Experience) => {
                 <p class="text-sm text-primary font-medium">{{ edu.period }}</p>
                 <h4 class="text-xl font-bold mt-2">{{ edu.title }}</h4>
                 <p class="text-gray-400 mt-1">{{ edu.company }}</p>
-                <p class="text-gray-300 mt-3">{{ edu.description }}</p>
+                <p class="[color:#504E4E] mt-3">{{ edu.description }}</p>
               </div>
             </div>
           </div>
