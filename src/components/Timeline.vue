@@ -172,6 +172,7 @@ const openExperienceDetails = (experience: Experience) => {
               <div class="glass-card p-6 transform hover:scale-105 transition-all duration-300 
                           cursor-pointer group" @click="openExperienceDetails(exp)">
                 <span class="text-sm text-primary font-medium">{{ exp.period }}</span>
+                <span class="absolute right-4 top-2 text-xs text-primary whitespace-nowrap">{{ $t('about.experience.clickForDetails') }}</span>
                 <h4 class="text-xl font-bold mt-2 group-hover:text-primary transition-colors">
                   {{ exp.title }}
                 </h4>
@@ -181,11 +182,6 @@ const openExperienceDetails = (experience: Experience) => {
                   <span v-for="tech in exp.technologies" :key="tech" class="bg-[#f5f5f5] px-3 py-1 text-sm  rounded-full">
                     {{ tech }}
                   </span>
-                </div>
-
-                <!-- Click Indicator -->
-                <div class="absolute right-4 top-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span class="text-sm text-primary">{{ $t('about.experience.clickForDetails') }}</span>
                 </div>
               </div>
             </div>

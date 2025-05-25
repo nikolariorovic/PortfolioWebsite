@@ -58,7 +58,7 @@ watch(() => props.isOpen, (newValue) => {
             <!-- Content -->
             <div class="h-full overflow-y-auto p-8 pt-16 pb-20 custom-scrollbar">
               <!-- Project Details -->
-              <div v-if="drawerStore.selectedProject" class="space-y-8">
+              <div v-if="drawerStore.selectedProject" class="space-y-8 mb-10 md:mb-0">
                 <img :src="drawerStore.selectedProject.image" :alt="drawerStore.selectedProject.title"
                   class="w-full object-cover rounded-xl">
 
@@ -88,7 +88,7 @@ watch(() => props.isOpen, (newValue) => {
                       </ul>
                     </div>
 
-                    <div class="flex gap-4">
+                    <div class="flex flex-row flex-wrap gap-3 md:flex-row md:gap-4">
                       <a v-if="drawerStore.selectedProject.liveUrl" :href="drawerStore.selectedProject.liveUrl"
                         target="_blank" class="[color:#ffffff] btn-primary">
                         View Live

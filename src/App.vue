@@ -71,10 +71,10 @@ const scrollToTop = () => {
 }
 
 const downloadCV = () => {
-  const cvUrl = '/Krstic Djordje - CV.pdf'
+  const cvUrl = '/nikola_riorovic_cv.pdf'
   const link = document.createElement('a')
   link.href = cvUrl
-  link.download = 'Krstic Djordje - CV.pdf'
+  link.download = 'nikola_riorovic_cv.pdf'
   document.body.appendChild(link)
   link.click()
   document.body.removeChild(link)
