@@ -77,7 +77,7 @@ const messages = {
         },
         hero: {
             title: "Nikola Riorović",
-            subtitle: "Passionate Software Developer crafting reliable, high-performance solutions — driven by challenge, fueled by improvement. Let’s push boundaries!🔥",
+            subtitle: "Experienced and passionate software developer dedicated to building reliable, high-performance solutions. Constantly striving to grow through new challenges.🔥",
             viewProjects: 'Projects',
             contactMe: 'Contact Me'
         },

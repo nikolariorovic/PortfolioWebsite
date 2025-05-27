@@ -24,10 +24,10 @@ const experiences = computed(() => [
     company: 'AppWorks',
     description: 'Developed and enhanced a CMS for hybrid mobile apps with custom plugins, including article lists, sliders, transaction pages, and more.',
     detailedDescription: [
-      'Enhanced CMS for hybrid apps with custom plugins: articles, sliders, transactions, and more.',
-      'Integrated online payments (WSPay, Intesa, Raiffeisen, CorvusPay) and fiscalization with Laravel Queue & Supervisor.',
-      'Optimized high-load asset platform (2M+ assets/year), boosting critical page speed by 40% with queries, caching & admin tweaks.',
+      'Developed and enhanced CMS for hybrid apps with custom plugins: articles, sliders, transactions, and more.',
       'Built & optimized APIs for iOS, Android, Flutter, and web, ensuring fast delivery of imported & internal content.',
+      'Optimized high-load asset platform (2M+ assets/year), boosting critical page speed by 40% with queries, caching & admin tweaks.',
+      'Integrated online payments (WSPay, Intesa, Raiffeisen, CorvusPay) and fiscalization with Laravel Queue & Supervisor.',
       'Integrated third-party APIs (news, stats, social, live video) & added real-time features like chat & live text with web sockets.',
       'Developed a Python facial recognition & object detection app with Flask, integrated into a Laravel project.',
     ],
